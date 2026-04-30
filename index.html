@@ -6,34 +6,26 @@
     <title>@seg.pauu22 | Enlaces</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; color: white; }
-
-        /* Video de fondo */
-        #video-fondo {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -100;
-            transform: translateX(-50%) translateY(-50%);
-            object-fit: cover;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: -1;
-        }
-
-        .contenedor { width: 90%; max-width: 400px; text-align: center; }
         
-        h1 { font-size: 1.8rem; margin-bottom: 25px; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Usamos la foto perfil.jpg con un fondo oscuro para que resalten los botones */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('perfil.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            overflow: hidden;
+        }
 
-        /* Estilo de los botones */
+        .contenedor { width: 90%; max-width: 400px; text-align: center; z-index: 10; }
+        
+        h1 { font-size: 1.8rem; margin-bottom: 25px; text-shadow: 2px 2px 10px rgba(0,0,0,0.9); }
+
         .boton {
             display: flex;
             align-items: center;
@@ -46,36 +38,28 @@
             font-weight: bold;
             font-size: 16px;
             transition: 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
-        /* Colores degradados */
         .azul-vip { background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%); }
-        .blanco-tel { background: rgba(255, 255, 255, 0.95); color: #0088cc; }
+        .blanco-tel { background: rgba(255, 255, 255, 0.9); color: #0088cc; }
         .rosa-insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 
-        .boton:hover { transform: scale(1.04); opacity: 0.9; }
+        .boton:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
 
-    <video autoplay muted loop playsinline id="video-fondo">
-        <source src="https://litterbox.catbox.moe/z9mxawpq33q256jk.mp4" type="video/mp4">
-    </video>
-
-    <div class="overlay"></div>
-
     <div class="contenedor">
         <h1>@seg.pauu22</h1>
         
-        <!-- Botón de Cafecito -->
-        <a href="https://cafecito.app/paulisgv99" target="_blank" class="boton azul-vip">Lo que realmente querés ver 🌶️</a>
+        <!-- Aquí está la frase nueva que pediste -->
+        <a href="https://cafecito.app/paulisgv99" target="_blank" class="boton azul-vip">Lo que buscas esta aca 🔥😈</a>
         
-        <!-- Botón de Telegram -->
         <a href="https://t.me/+N0oDjAG7q7VhYmEx" target="_blank" class="boton blanco-tel">Canal de Telegram</a>
         
-        <!-- Botón de Instagram -->
         <a href="https://www.instagram.com/seg.pauu22/" target="_blank" class="boton rosa-insta">Instagram</a>
     </div>
 
